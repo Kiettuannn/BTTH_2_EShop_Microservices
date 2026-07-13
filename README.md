@@ -28,17 +28,17 @@ Catalog.API/
 ### Mã nguồn
 
 **GetProductsByPriceRangeHandler.cs** (Thực hiện logic query qua Marten)
-![GetProductsByPriceRangeHandler Code](images/GetProductsByPriceRangeHandler.jpg)
+![GetProductsByPriceRangeHandler Code](images/GetProductsByPriceRangeHandler.png)
 
 **GetProductsByPriceRangeEndpoint.cs** (Carter Endpoint MapGet nhận query string)
-![GetProductsByPriceRangeEndpoint Code](images/GetProductsByPriceRangeEndpoint.jpg)
+![GetProductsByPriceRangeEndpoint Code](images/GetProductsByPriceRangeEndpoint.png)
 
 ### Kết quả Test bằng Postman
 
 Gọi API qua Postman để lọc sản phẩm trong khoảng giá từ 500 đến 1000:
 `GET http://localhost:6000/products/price?minPrice=500&maxPrice=1000`
 
-![GetProductsByPriceRange Postman Result](images/GetProductsByPriceRange_Postman.jpg)
+![GetProductsByPriceRange Postman Result](images/GetProductsByPriceRange_Postman.png)
 
 ---
 
@@ -60,13 +60,13 @@ Ordering.API/Endpoints/
 ### Mã nguồn
 
 **GetOrdersByStatusQuery.cs** (Định nghĩa Query record)
-![GetOrdersByStatusQuery Code](images/GetOrdersByStatusQuery.jpg)
+![GetOrdersByStatusQuery Code](images/GetOrdersByStatusQuery.png)
 
 **GetOrdersByStatusHandler.cs** (Xử lý filter trạng thái qua EF Core DbContext)
-![GetOrdersByStatusHandler Code](images/GetOrdersByStatusHandler.jpg)
+![GetOrdersByStatusHandler Code](images/GetOrdersByStatusHandler.png)
 
 **GetOrdersByStatus.cs** (Carter Endpoint nhận biến route `{status}`)
-![GetOrdersByStatusEndpoint Code](images/GetOrdersByStatusEndpoint.jpg)
+![GetOrdersByStatusEndpoint Code](images/GetOrdersByStatusEndpoint.png)
 
 ### Kết quả Test bằng Postman
 
@@ -80,4 +80,4 @@ Ordering.API/Endpoints/
 Kiểm tra API lấy các đơn hàng đang ở trạng thái `Pending` (`status=2`):
 `GET http://localhost:6003/orders/status/2`
 
-![GetOrdersByStatus Postman Result](images/GetOrdersByStatus_Postman.jpg)
+![GetOrdersByStatus Postman Result](images/GetOrdersByStatus_Postman.png)
